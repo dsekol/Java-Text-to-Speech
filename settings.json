@@ -1,0 +1,39 @@
+{
+  "java.project.referencedLibraries": [
+      "lib/freetts.jar",
+      "lib/cmu_time_awb.jar",
+      "lib/cmudict04.jar",
+      "lib/cmulex.jar",
+      "lib/cmutimelex.jar",
+      "lib/en_us.jar",
+      "lib/jsapi.jar"
+  ],
+
+  "java.debug.settings.onBuildFailure": "ask",
+  "java.debug.settings.onBuildFailure.proceed": true,
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.configuration.checkProjectSettings": true,
+  "java.debug.settings.consoleEncoding": "UTF-8",
+  "java.debug.settings.exceptionBreakpoint.enabled": true,
+  "java.debug.settings.exceptionBreakpoint.filter": {
+      "not": [
+          "java.lang.ClassNotFoundException"
+      ]
+  },
+
+  "java.project.sourcePaths": [
+    ""
+  ],
+
+  "java.configuration.vmArgs": [
+    "-Dfreetts.voices=com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory",
+    "-Djavax.speech.freetts.voice.defaultAudioPlayer=org.hear2read.indian.tts.plugins.audio.JavaFXAudioPlayer",
+    "-Dfile.encoding=UTF-8",
+    "-Duser.language=en",
+    "-Duser.region=US",
+    "-Djava.util.logging.config.file=./conf/logging.properties",
+    "-Dfreetts.home=./",
+    "-Dsphinx4.jar.path=libs/",
+    "-Dcmulex.resource=/com/sun/speech/freetts/en/us/cmulex_lts.bin"
+]
+}
