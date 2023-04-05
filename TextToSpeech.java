@@ -1,11 +1,11 @@
 // Java code to convert text to speech
-  
+
 import java.util.Locale;
 import javax.speech.Central;
 import javax.speech.synthesis.Synthesizer;
 import javax.speech.synthesis.SynthesizerModeDesc;
   
-public class TextToSpeech {
+public class TextSpeech {
   
     public static void main(String[] args)
     {
@@ -42,10 +42,16 @@ public class TextToSpeech {
   
             // Deallocate the Synthesizer.
             synthesizer.deallocate();
+            System.out.println("Hello!! success");
+
         }
-  
+
         catch (Exception e) {
+            System.out.println("Hello!! fail");
+
             e.printStackTrace();
         }
+
+        System.out.println("Final Hello!!");
     }
 }
